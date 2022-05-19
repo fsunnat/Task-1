@@ -8,12 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let lable = UILabel()
+        var a = 4
+        while a > 10{
+            
+            lable.backgroundColor = UIColor.white
+            lable.text = "\(a)"
+            lable.addSubview(lable)
+            a = a + 1
+        }
     }
-
-
 }
 
